@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary">
+        <TextView
+            android:id="@+id/toolbarTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:text="@string/language_select"
+            android:textColor="#FFFFFF"
+            android:textSize="17sp" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/what_is_your_mother_language"
+        android:textColor="?attr/colorSecondary"
+        android:textSize="22sp" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp">
+
+        <RadioButton
+            android:id="@+id/russian"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="@string/russian"
+            android:background="@drawable/language_radio_button"
+            android:button="@null"
+            android:textSize="22sp"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:textColor="@color/black"/>
+
+        <RadioButton
+            android:id="@+id/english"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="@string/english"
+            android:background="@drawable/language_radio_button"
+            android:button="@null"
+            android:textSize="22sp"
+            android:layout_marginTop="10dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:textColor="@color/black"/>
+
+        <RadioButton
+            android:id="@+id/chinese"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="@string/chinese"
+            android:background="@drawable/language_radio_button"
+            android:button="@null"
+            android:textSize="22sp"
+            android:layout_marginTop="10dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:textColor="@color/black"/>
+
+        <RadioButton
+            android:id="@+id/belarus"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="@string/belarus"
+            android:background="@drawable/language_radio_button"
+            android:button="@null"
+            android:textSize="22sp"
+            android:layout_marginTop="10dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:textColor="@color/black"/>
+
+        <RadioButton
+            android:id="@+id/kazakh"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="@string/kazakh"
+            android:background="@drawable/language_radio_button"
+            android:button="@null"
+            android:textSize="22sp"
+            android:layout_marginTop="10dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:textColor="@color/black"/>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/chooseButton"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="190dp"
+        app:backgroundTint="@null"
+        android:background="@drawable/blue_rounded_corner"
+        android:text="@string/choose"
+        android:textSize="20sp"
+        android:textColor="@color/white"/>
+</LinearLayout>

@@ -1,0 +1,9 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.LanguageApp" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/purple</item>
+        <item name="android:fontFamily">@font/fredoka_medium_500</item>
+        <item name="android:colorBackground">@color/dark</item>
+        <item name="colorSecondary">@color/white</item>
+    </style>
+</resources>

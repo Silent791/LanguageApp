@@ -1,0 +1,5 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+    <solid android:color="#A0A0A0" /> <!-- Цвет неактивной точки -->
+    <size android:width="16dp" android:height="16dp" /> <!-- Размер неактивной точки -->
+</shape>

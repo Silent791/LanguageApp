@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/red">
+
+        <RelativeLayout
+            android:layout_width="350dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center">
+
+            <ImageButton
+                android:id="@+id/page_back"
+                android:layout_width="21dp"
+                android:layout_height="match_parent"
+                android:background="@color/red"
+                android:contentDescription="@string/arrow_back"
+                android:src="@drawable/arrow_circle_left"/>
+
+            <TextView
+                android:id="@+id/toolbarTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginStart="30dp"
+                android:text="@string/guess_the_animal"
+                android:textColor="#FFFFFF"
+                android:textSize="22sp"/>
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <ImageView
+        android:layout_width="350dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center"
+        android:contentDescription="@string/sad_cat"
+        android:src="@drawable/cat_sad"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/eh_wrong_answer_nthat_is_racoon"
+        android:layout_marginTop="40dp"
+        android:textSize="20sp"
+        android:textColor="?attr/colorSecondary"/>
+
+    <Button
+        android:id="@+id/nextButton"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        app:backgroundTint="@null"
+        android:background="@drawable/blue_rounded_corner"
+        android:text="@string/next"
+        android:textSize="20sp"
+        android:textColor="@color/white"/>
+
+    <Button
+        android:id="@+id/tryButton"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="14dp"
+        app:backgroundTint="@null"
+        android:background="@drawable/blue_rounded_corner"
+        android:text="@string/try_again"
+        android:textSize="20sp"
+        android:textColor="@color/white" />
+
+</LinearLayout>
